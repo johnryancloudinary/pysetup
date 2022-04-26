@@ -1,5 +1,7 @@
 [tool.poetry]
+authors = ["John Ryan <john.ryan@cloudinary.com>"]
 description = ""
+name = "lorem_ipsum"
 version = "0.1.0"
 
 [tool.poetry.dependencies]

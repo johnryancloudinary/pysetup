@@ -1,0 +1,25 @@
+{
+    "python.pythonPath": "__pypath__/bin/python",
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "python.linting.flake8Args": [
+        "--max-line-length=88"
+    ],
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "[python]": {
+        "editor.formatOnPaste": false,
+        "editor.formatOnSaveMode": "file"
+    },
+    "files.exclude": {
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/__pycache__": true
+    }
+}

@@ -1,3 +1,9 @@
+# START
+
+```
+__pypath__=$(poetry env info --path 2> /dev/null); sed -i "" -r "s#__pypath__#${__pypath__/}#" .vscode/settings.json
+```
+
 # One-liner...
 
 Description...
@@ -11,8 +17,8 @@ Preparatory steps:
 
 | email | external_id | user_id | permissions | all_customers | subaccounts |
 |-------|-------------|---------|-------------|---------------|-------------|
-| john.ryan+roca.test.user2@cloudinary.com | 21de4661ee2e6dd4db174cd17c9814 | 667392444 | 32768 | True | ['jrdemo'] |
-| john.ryan+roca.test.user1@cloudinary.com | d90a7a86ba85f87b70910e1a12ec6d | 667392442 | 32768 | False | ['jrdemo', 'jrbrandportal'] |
+| john.ryan+test.user2@cloudinary.com | 21***14 | 66***44 | 32768 | True | ['jrdemo'] |
+| john.ryan+test.user1@cloudinary.com | d9***6d | 66***42 | 32768 | False | ['jrdemo', 'jrbrandportal'] |
 
 
 ## Execution
@@ -47,5 +53,5 @@ An unsuccessful request will yield an Error message, eg.
 
 ```
 2022-04-22 23:52:32,972 : DEBUG : ...
-2022-04-22 23:52:48,139 : ERROR : [dev.scratchpad.update_user_account_add_collection_permissions.update_user_accounts] update_user_account: [XXXXXX] ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2022-04-22 23:52:48,139 : ERROR : [...] update_user_account: [XXXXXX] ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
 ```
